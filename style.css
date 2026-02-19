@@ -1,0 +1,86 @@
+/* Pengesetan Asas */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin: 0;
+}
+
+.table-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Gaya Jadual */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 800px;
+    border: 2px solid #333;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 12px 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Warna Header (Minggu) */
+thead th {
+    background-color: #FFFF00; /* Kuning Terang */
+    color: #000;
+}
+
+/* Warna Kolum Hari */
+.day-cell {
+    background-color: #4B0082; /* Ungu Gelap */
+    color: white;
+    width: 150px;
+}
+
+/* Warna Petugas (Berdasarkan Kod Hex Fail) */
+.aiman {
+    background-color: #FFDAB9; /* Peach / Oren Muda */
+    color: #000;
+}
+
+.faiz {
+    background-color: #FFDB58; /* Kuning Mustard */
+    color: #000;
+}
+
+.naudi, .duet {
+    background-color: #00FFFF; /* Cyan / Biru Muda */
+    color: #000;
+}
+
+.standby {
+    background-color: #D3D3D3; /* Kelabu Muda */
+    color: #000;
+}
+
+.empty {
+    background-color: #ffffff;
+    color: #ccc;
+}
+
+/* Nota Kaki */
+.footer-note {
+    margin-top: 15px;
+    font-size: 12px;
+    font-style: italic;
+    color: #666;
+}
