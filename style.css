@@ -15,11 +15,38 @@ body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-h2 {
+/* Gaya Header Masjid */
+.header-masjid {
     text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.logo-rasmi {
+    width: 100px; /* Anda boleh laras saiz logo di sini */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.header-masjid h1 {
+    margin: 5px 0;
+    font-size: 24px;
+    color: #4B0082; /* Warna Ungu Gelap */
     text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.garis-hiasan {
+    width: 60%;
+    border: 0;
+    height: 2px;
+    background: #4B0082;
+    margin: 15px auto;
+}
+
+.header-masjid h2 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 0;
 }
 
 /* Gaya Jadual */
@@ -85,10 +112,6 @@ thead th {
     color: #666;
 }
 
-/* ============================================================ */
-/* Kemaskini style.css (Gaya Butang & Fungsi Sembunyi)        */
-/* ============================================================ */
-
 /* Gaya untuk Butang Cetak */
 .print-button {
     background-color: #4B0082; /* Warna Ungu Gelap sama macam tema */
@@ -106,7 +129,7 @@ thead th {
     background-color: #310055;
 }
 
-/* ⚠️ PENTING: Sembunyikan butang semasa mencetak */
+/* ⚠️ PENTING: Sembunyikan butang semasa mencetak & Larasan Cetakan */
 @media print {
     .no-print, .print-button {
         display: none !important;
@@ -126,5 +149,9 @@ thead th {
     table {
         width: 100%;
         border: 2px solid black; /* Pastikan garisan jelas semasa print */
+    }
+
+    .logo-rasmi {
+        width: 80px; /* Saiz logo sedikit kecil semasa print */
     }
 }
