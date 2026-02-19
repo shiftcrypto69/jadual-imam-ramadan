@@ -84,3 +84,47 @@ thead th {
     font-style: italic;
     color: #666;
 }
+
+/* ============================================================ */
+/* Kemaskini style.css (Gaya Butang & Fungsi Sembunyi)        */
+/* ============================================================ */
+
+/* Gaya untuk Butang Cetak */
+.print-button {
+    background-color: #4B0082; /* Warna Ungu Gelap sama macam tema */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.print-button:hover {
+    background-color: #310055;
+}
+
+/* ⚠️ PENTING: Sembunyikan butang semasa mencetak */
+@media print {
+    .no-print, .print-button {
+        display: none !important;
+    }
+    
+    body {
+        background-color: white;
+        padding: 0;
+    }
+
+    .table-container {
+        box-shadow: none;
+        padding: 0;
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        border: 2px solid black; /* Pastikan garisan jelas semasa print */
+    }
+}
